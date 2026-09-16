@@ -1,11 +1,17 @@
 #include <stdio.h>
+
 int main()
 {
-    char country = 'b';
-    if (country >= '97' && country <= '122')
+
+    int X, i;
+    scanf("%d", &X);
+    for (i = 0; i <= X; i++)
     {
-        country = 'A' + (country - 'a');
-        printf("%s\n", country);
+        if (i % 2 == 0)
+        {
+            continue;
+        }
+        printf("%d\n", i);
     }
 
     return 0;
